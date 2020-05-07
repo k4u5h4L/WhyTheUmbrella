@@ -3,7 +3,7 @@ A weather app which brings you the weather data of the desired area using weathe
 
 ## Live website:
 
-* Hosted on Hekoru: [Here](https://intense-dusk-15451.herokuapp.com/)
+* Hosted on Heroku: [Here](https://intense-dusk-15451.herokuapp.com/)
 
 ![Image of site1](https://github.com/theParanoidScripts/WhyTheUmbrella/blob/master/assets/whytheumbrella.png)
 
