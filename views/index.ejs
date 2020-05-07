@@ -1,0 +1,82 @@
+<%- include("partials/header"); -%>
+
+        <div class="hero" data-bg-image="images/background2.jpg" data-aos="zoom-in">
+            <div class="container">
+                <form action="/" method="POST" class="find-location">
+                    <input type="text" name="cityName" id="cityInput" placeholder="Enter your city...." />
+                    <input type="submit" value="Find" />
+                </form>
+            </div>
+        </div>
+        <div class="forecast-table" data-aos="slide-up">
+            <div class="container">
+                <div class="forecast-container">
+                    <div class="today forecast">
+                        <div class="forecast-header">
+                            <div class="day"><span id="dayOfWeek"></span></div>
+                            <div class="date"><span id="date"></span><span id="month"></span></div>
+                        </div>
+                        <!-- .forecast-header -->
+                        <div class="forecast-content">
+                            <div class="location"><%= data.place %></div>
+                            <div class="degree">
+                                <div class="num">
+                                    <span id="temperature"><%= data.temperature %></span><sup>o</sup>C
+                                </div>
+                                <div class="forecast-icon">
+                                    <img src="<%= data.imageUrl %>" alt="weather-icon" width="90" />
+                                </div>
+                            </div>
+                            <span
+                                ><img src="images/icon-umberella.png" alt="condition" />
+                                <span><%= data.weatherMain %></span></span
+                            >
+                            <span
+                                ><img src="images/icon-wind.png" alt="wind" /><%= data.windSpeed %>
+                                km/hr</span
+                            >
+
+                            <span
+                                ><img src="images/icon-compass.png" alt="wind-direction" /><span
+                                    ><%= data.windDirection %></span
+                                ></span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <div class="fullwidth-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" data-aos="slide-left">
+                            <h2 class="section-title">Extra Information</h2>
+                            <ul class="arrow-feature">
+                                <li>
+                                    <h3>Weather Description</h3>
+                                    <p name="desp"><%= data.weatherDescription %></p>
+                                </li>
+                                <li>
+                                    <h3>Pressure</h3>
+                                    <p name="pressure"><%= data.pressure %> Pa</p>
+                                </li>
+                                <li>
+                                    <h3>Humidity</h3>
+                                    <p name="humidity"><%= data.humidity %> gm/m<sup>3</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" style="margin-left: 30%;" data-aos="slide-right">
+                            <h2 class="section-title">Reference links</h2>
+                            <ul class="arrow-list">
+                                <li><a href="https://openweathermap.org/">openweathermap.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- .main-content -->
+
+        <%- include("partials/footer"); -%>

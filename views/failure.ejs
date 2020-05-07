@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+<%- include("partials/header"); -%>
+
+            <div class="fullwidth-block">
+                <div class="container">
+                    <div class="col-md-6 col-md-offset-1" data-aos="zoom-in">
+                        <h2 class="section-title">Choose Location</h2>
+                        <p>
+                            Uh oh! The location you specified wasn't found. Please try again with another
+                            keyword for the place or with a different spelling.
+                        </p>
+                        <form action="/failure" method="POST" class="contact-form">
+                            <div class="text-left">
+                                <input type="submit" value="Try again" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- .main-content -->
+
+        <%- include("partials/footer"); -%>
