@@ -1,5 +1,6 @@
 //jshint esversion:6
 
+// module to find the direction of the wind given degrees
 exports.findDirec = (deg) => {
     let windDir;
 
