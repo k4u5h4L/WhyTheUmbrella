@@ -4,7 +4,7 @@
   "description": "A simple web app to get the weather at any place at any specific time",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon ."
   },
   "author": "Kaushal",
   "license": "ISC",
