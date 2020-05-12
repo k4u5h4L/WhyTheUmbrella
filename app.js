@@ -52,7 +52,7 @@ app.post("/", (req, res) => {
                 windDirection: windDir,
             };
 
-            res.render("index", { data: weatherDataRequired });
+            res.render("index", { data: weatherDataRequired }); // sending an object to the ejs filee
         });
     });
 });
