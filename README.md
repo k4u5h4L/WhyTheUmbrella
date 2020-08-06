@@ -17,7 +17,7 @@ A weather app which brings you the weather data of the desired area using weathe
 - Clone the repo and cd into it
 
 ```
-git clone https://github.com/theParanoidScripts/WhyTheUmbrella.git && cd WhyTheUmbrella
+git clone https://github.com/k4u5h4L/WhyTheUmbrella.git && cd WhyTheUmbrella
 ```
 
 - Install needed dependencies
